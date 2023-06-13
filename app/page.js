@@ -1,5 +1,4 @@
 /* Homepage */
-
 import Image from 'next/image'
 import '../styles/homepage.css';
 export const metadata = {

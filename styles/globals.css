@@ -19,9 +19,13 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+      100deg,
+      #000428,
+      hsl(273, 80%, 14%)
     )
     rgb(var(--background-start-rgb));
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
+
