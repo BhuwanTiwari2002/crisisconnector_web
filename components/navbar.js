@@ -11,6 +11,7 @@ function navbar() {
         <span></span>
         <span></span>
         <ul id="menu">
+            <li><Link href="/">Home</Link></li>
             <li><Link href="/hotlines">Hotlines</Link></li>
             <li><Link href="/resources">Resources</Link></li>
         </ul>
