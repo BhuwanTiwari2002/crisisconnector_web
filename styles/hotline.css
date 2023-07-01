@@ -1,0 +1,38 @@
+
+
+#hotlineList {
+    margin-top: 20px;
+    margin: 0px auto;
+    color: white;
+  }
+
+  #hotlineTitle h2 {
+    font-size: 29.5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  #hotlineName a{
+    background-color:#512DA8; 
+    border-bottom: 1px solid white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+/* Heading Text */
+#rainbow-heading-text {
+  background-clip: text;   
+  color: transparent;  
+  /* Making it so that the color is transparnet so that the it shows background color not text color */
+  font-size: 30px;
+  opacity: 100%;
+  font-weight: 700;
+  letter-spacing: -1.456px;
+  line-height: 112px;
+  /* background-image:linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); */
+  background: linear-gradient(90.05deg, rgb(181, 255, 211) 0.02%, rgb(209, 164, 255) 39.16%, rgb(255, 165, 175) 75.82%, rgb(255, 220, 164) 112%) text;
+}
