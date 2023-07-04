@@ -1,4 +1,5 @@
 import React from 'react'
+// import '../../styles/styles/hotline.css';
 
 const getHotlineData = async (url) => {
   try {
@@ -39,7 +40,15 @@ const HotlineSearch = () => {
       <h1 id="rainbow-heading-text" style={{ textAlign: 'center' }}>
         Hotline List
       </h1>
-      <h2>{data}</h2>
+      <div id="hotlineList" className="form-group">
+        <div className="hotlineTitle">
+          <h2>Hello</h2>
+          <div className="hotlineName">
+            <a>Test</a>
+          </div>
+
+        </div>
+      </div>
     </form>
   );
 };
