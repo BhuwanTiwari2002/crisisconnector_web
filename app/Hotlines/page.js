@@ -1,5 +1,29 @@
 import React from 'react'
-import renderHotlineListPage from'../../modules/hotlines';
+
+const getHotlineData = async (url) => {
+  try {
+      const response = await fetch('http://localhost:3000/api/' + url);
+      const data = await response.json();
+      return data;
+  } catch (error) {
+      console.error(error);
+  }
+}
+
+
+const fetchData = async () => {
+  let data = await getHotlineData('hotline');
+  // Assuming that data is an array
+  if (Array.isArray(data)) {
+    data.forEach(item => {
+      item = data;
+    });
+  } else {
+    console.log("Data is not an array");
+  }
+}
+fetchData();
+
 const HotlineSearch = () => {
   return (
     <form>
@@ -15,7 +39,7 @@ const HotlineSearch = () => {
       <h1 id="rainbow-heading-text" style={{ textAlign: 'center' }}>
         Hotline List
       </h1>
-      <renderHotlineListPage />
+      <h2>{data}</h2>
     </form>
   );
 };
