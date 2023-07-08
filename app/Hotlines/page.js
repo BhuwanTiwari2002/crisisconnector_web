@@ -26,18 +26,16 @@ const fetchData = async () => {
 fetchData();
 
 const HotlineSearch = async () => {
-    {   
-      let data = await getHotlineData('hotline');
-      let test = "";
-      data.forEach(({title, types}) => {
-        test = title;
-        console.log(title);
-        console.log(types);
-        types.forEach(({ name, link }) => {
-          console.log(name);
-        });   
-      })
-    }
+    let data = await getHotlineData('hotline');
+    let test = "";
+    data.forEach(({title, types}) => {
+      test = title;
+      console.log(title);
+      console.log(types);
+      types.forEach(({ name, link }) => {
+        console.log(name);
+      });   
+    });
 
   return (
     <form>
@@ -53,30 +51,22 @@ const HotlineSearch = async () => {
       <h1 style={{ margin: '20px' , textAlign: 'center', fontSize: '35px'}}>
         Hotline List
       </h1>
-      
-
-    <div id="hotlineList" className="form-group">
-        <div className="hotlineTitle">
-          <h2>Test</h2>
-          <div className="hotlineName">
-            <a>Test</a>
-            <a>Test</a>
-            <a>Test</a>
-            <a>Test</a>
-          </div>
-        </div>
-        <div className="hotlineTitle">
-          <h2>Hello</h2>
-          <div className="hotlineName">
-            <a>Test</a>
-            <a>Test</a>
-            <a>Test</a>
-            <a>Test</a>
-          </div>
-        </div>
-      </div>
-
-
+      {
+        data.map(({title, types}) => {
+          return (
+            <div className="hotlineTitle" > 
+              <h2>{title}</h2>
+              {types.map(({name, link}) => {
+                return (
+                  <div className="hotlineName">
+                    <a href={link}>{name}</a>
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })
+      }
     </form>
   );
 };
