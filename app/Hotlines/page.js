@@ -12,31 +12,9 @@ const getHotlineData = async (url) => {
 }
 
 
-const fetchData = async () => {
-  let data = await getHotlineData('hotline');
-  // Assuming that data is an array
-  if (Array.isArray(data)) {
-    data.forEach(item => {
-      item = data;
-    });
-  } else {
-    console.log("Data is not an array");
-  }
-}
-fetchData();
 
 const HotlineSearch = async () => {
-    let data = await getHotlineData('hotline');
-    let test = "";
-    data.forEach(({title, types}) => {
-      test = title;
-      console.log(title);
-      console.log(types);
-      types.forEach(({ name, link }) => {
-        console.log(name);
-      });   
-    });
-
+  let data = await getHotlineData('hotline');
   return (
     <form>
       <div className="form-group mt-3">
