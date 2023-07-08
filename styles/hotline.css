@@ -1,17 +1,17 @@
 
-#hotlineList {
+.hotlineList {
     margin-top: 20px;
     margin: 0px auto;
     color: white;
   }
 
-  #hotlineTitle h2 {
+  .hotlineTitle h2 {
     font-size: 29.5px;
     display: flex;
     justify-content: center;
     font-weight: bold;
   }
-  #hotlineName a{
+  .hotlineName a{
     background-color:#512DA8; 
     border-bottom: 1px solid white;
     font-size: 25px;
