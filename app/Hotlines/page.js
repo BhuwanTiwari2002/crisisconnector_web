@@ -11,8 +11,6 @@ const getHotlineData = async (url) => {
   }
 }
 
-
-
 const HotlineSearch = async () => {
   let data = await getHotlineData('hotline');
   return (

@@ -18,7 +18,7 @@ function navbar() {
                 <li><Link href="/resources">Resources</Link></li>
             </ul>
         </div>
-        <div class="logo-container">
+        <div className="logo-container">
                 <Image src={HotlineLogo} alt="Hotline Logo" width={75} height={75} />
         </div>
     </nav>
