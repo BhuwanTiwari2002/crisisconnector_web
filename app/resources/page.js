@@ -18,21 +18,25 @@ const HotlineSearch = async () => {
         <h1>Resource</h1>
         {
           data.map(({category, types}) => {
-            <h2 className='category-title'>{category}</h2>
               return (
-                <div className='resource-grid'>
-                      {types.map(({title, description, image_path}) => {
-                        return (
-                          <div className='resource-item'>
-                            <img></img>
-                            <div className='resource-info'>
-                              <h2 className='resource-title'>{title}</h2>
-                              <p className='resource-desc'>{description}</p>
-                              <a className='resource-link'>More Info</a>
+                <div>
+                  <div>
+                    <h2 className='category-title'>{category}</h2>
+                  </div>
+                  <div className='resource-grid'>
+                        {types.map(({title, description, image_path}) => {
+                          return (
+                            <div className='resource-item'>
+                              <img></img>
+                              <div className='resource-info'>
+                                <h2 className='resource-title'>{title}</h2>
+                                <p className='resource-desc'>{description}</p>
+                                <a className='resource-link'>More Info</a>
+                              </div>
                             </div>
-                          </div>
-                        );
-                      })}
+                          );
+                        })}
+                  </div>
                 </div>
               );
           })
