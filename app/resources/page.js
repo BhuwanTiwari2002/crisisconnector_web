@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../styles/hotline.css';
-
+import '../../styles/resource.css'
 const getHotlineData = async (url) => {
   try {
       const response = await fetch('http://localhost:3000/api/' + url);
@@ -14,21 +14,29 @@ const getHotlineData = async (url) => {
 const HotlineSearch = async () => {
   let data = await getHotlineData('resource');
   return (
-      <body>
+      <body className='container' id="ResourcesMainContainer">
         <h1>Resource</h1>
         {
           data.map(({category, types}) => {
-            <h2 class='category-title'></h2>
               return (
-                <div class="container" id="ResourcesMainContainer">
-                      <h2>{category}</h2>
-                      {types.map(({title, description, image_path}) => {
-                        return (
-                          <div>
-                            <a href={title}>{description}</a>
-                          </div>
-                        );
-                      })}
+                <div>
+                  <div>
+                    <h2 className='category-title'>{category}</h2>
+                  </div>
+                  <div className='resource-grid'>
+                        {types.map(({title, description, image_path}) => {
+                          return (
+                            <div className='resource-item'>
+                              <img></img>
+                              <div className='resource-info'>
+                                <h2 className='resource-title'>{title}</h2>
+                                <p className='resource-desc'>{description}</p>
+                                <a className='resource-link'>More Info</a>
+                              </div>
+                            </div>
+                          );
+                        })}
+                  </div>
                 </div>
               );
           })
