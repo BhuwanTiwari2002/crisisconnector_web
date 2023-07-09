@@ -63,24 +63,6 @@
     ]
   },
   {
-    "title": "Domestic Violence",
-    "types": [
-      {"name": "National Domestic Violence Hotline", "link": "8007997233"}
-    ]
-  },
-  {
-    "title": "Education",
-    "types": [
-      {"name": "National Grad Crisis Line", "link": "8774723457"}
-    ]
-  },
-  {
-    "title": "Sexual Assault",
-    "types": [
-      {"name": "National Sexual Assault Hotline", "link": "8006564673"}
-    ]
-  },
-  {
     "title": "Veterans Support",
     "types": [
       {"name": "Veterans Crisis Line", "link": "9881"}
