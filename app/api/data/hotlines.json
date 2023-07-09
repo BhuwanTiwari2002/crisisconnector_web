@@ -1,83 +1,89 @@
 [
-    {
-      "title": "Mental health",
-      "types": [
-        {
-          "name": "Depression",
-          "link": "8006624357"
-        },
-        {
-          "name": "Anxiety Disorder",
-          "link": "8669033787"
-        }, 
-        {
-          "name": "Bipolar Disorder",
-          "link": "866-903-3787"
-        },
-        {
-          "name": "Post-Traumatic Stress Disorder (PTSD)",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Schizophrenia",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Disruptive behaviour",
-          "link": "https://www.google.com/"
-        }
-      ]
-    },
-    {
-      "title": "Sleep",
-      "types": [
-        {
-          "name": "Insomnia",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Sleep Apnea",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Narcolepsy",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Restless Legs Syndrome",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Parasomnias",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Excessive Sleepiness",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Shift Work Disorder",
-          "link": "https://www.google.com/"
-        }
-      ]
-    },
-    {
-      "title": "Eating Disorder",
-      "types": [
-        {
-          "name": "Anorexia Nervosa",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Bulimia Nervosa",
-          "link": "https://www.google.com/"
-        },
-        {
-          "name": "Binge Eating Disorder",
-          "link": "https://www.google.com/"
-        }
-      ]
-    }
-  ]
-  
-  
+  {
+    "title": "Mental health",
+    "types": [
+      {"name": "Depression", "link": "8006624357"},
+      {"name": "Anxiety Disorder", "link": "8669033787"},
+      {"name": "Bipolar Disorder", "link": "866-903-3787"},
+      {"name": "Post-Traumatic Stress Disorder (PTSD)", "link": "https://www.google.com/"},
+      {"name": "Schizophrenia", "link": "https://www.google.com/"},
+      {"name": "Disruptive behaviour", "link": "https://www.google.com/"},
+      {"name": "Crisis Text Line", "link": "741741"},
+      {"name": "Nacional de Prevención del Suicidio", "link": "8886289454"},
+      {"name": "National Suicide and Crisis Lifeline", "link": "988"},
+      {"name": "National Suicide Prevention Lifeline (Options for Deaf and Hard of Hearing)", "link": "988"},
+      {"name": "Substance Abuse and Mental Health Services Administration National Helpline", "link": "8006624357"}
+    ]
+  },
+  {
+    "title": "Sleep",
+    "types": [
+      {"name": "Insomnia", "link": "https://www.google.com/"},
+      {"name": "Sleep Apnea", "link": "https://www.google.com/"},
+      {"name": "Narcolepsy", "link": "https://www.google.com/"},
+      {"name": "Restless Legs Syndrome", "link": "https://www.google.com/"},
+      {"name": "Parasomnias", "link": "https://www.google.com/"},
+      {"name": "Excessive Sleepiness", "link": "https://www.google.com/"},
+      {"name": "Shift Work Disorder", "link": "https://www.google.com/"}
+    ]
+  },
+  {
+    "title": "Eating Disorder",
+    "types": [
+      {"name": "Anorexia Nervosa", "link": "https://www.google.com/"},
+      {"name": "Bulimia Nervosa", "link": "https://www.google.com/"},
+      {"name": "Binge Eating Disorder", "link": "https://www.google.com/"}
+    ]
+  },
+  {
+    "title": "Addiction",
+    "types": [
+      {"name": "Alcoholics Anonymous", "link": "https://www.aa.org/"},
+      {"name": "Gamblers Anonymous", "link": "https://www.gamblersanonymous.org/ga/"},
+      {"name": "Narcotics Anonymous", "link": "https://www.na.org/"}
+    ]
+  },
+  {
+    "title": "Diseases",
+    "types": [
+      {"name": "CDC National HIV and AIDS Hotline", "link": "8002324636"}
+    ]
+  },
+  {
+    "title": "Child Protection",
+    "types": [
+      {"name": "Childhelp National Child Abuse Hotline", "link": "8004224453"}
+    ]
+  },
+  {
+    "title": "Disaster Support",
+    "types": [
+      {"name": "Disaster Distress Helpline Online Peer Support Communities", "link": "https://www.samhsa.gov/find-help/disaster-distress-helpline"},
+      {"name": "Disaster Distress Helpline Videophone for American Sign Language Users", "link": "https://www.samhsa.gov/find-help/disaster-distress-helpline"}
+    ]
+  },
+  {
+    "title": "Domestic Violence",
+    "types": [
+      {"name": "National Domestic Violence Hotline", "link": "8007997233"}
+    ]
+  },
+  {
+    "title": "Education",
+    "types": [
+      {"name": "National Grad Crisis Line", "link": "8774723457"}
+    ]
+  },
+  {
+    "title": "Sexual Assault",
+    "types": [
+      {"name": "National Sexual Assault Hotline", "link": "8006564673"}
+    ]
+  },
+  {
+    "title": "Veterans Support",
+    "types": [
+      {"name": "Veterans Crisis Line", "link": "9881"}
+    ]
+  }
+]
