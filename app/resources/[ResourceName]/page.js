@@ -27,7 +27,6 @@ const ResourceName = async ({ params }) => {
                         return (
                           <>
                             <h1>{title}</h1>
-                            <img src={image_path} alt={title} />
                             <p>{description}</p>
                             <h2>Introduction</h2>
                             <p>{details.introduction}</p>

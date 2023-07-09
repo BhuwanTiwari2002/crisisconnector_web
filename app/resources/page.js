@@ -27,7 +27,7 @@ const HotlineSearch = async () => {
                         {types.map(({title, description, image_path}) => {
                           return (
                             <div className='resource-item'>
-                              <img></img>
+                              <img src={image_path} alt={title} />
                               <div className='resource-info'>
                                 <h2 className='resource-title'>{title}</h2>
                                 <p className='resource-desc'>{description}</p>
