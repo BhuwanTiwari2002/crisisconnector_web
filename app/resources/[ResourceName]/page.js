@@ -11,11 +11,6 @@ const getHotlineData = async (url) => {
 
 const ResourceName = async ({ params }) => {
   let data = await getHotlineData('resource');
-  // if (params.ResourceName == ) {
-  //   element = <p>The condition is true!</p>;
-  // } else {
-  //   element = <p>The condition is false!</p>;
-  // }
   return (
     <body className='container' id="ResourcesMainContainer">
             <h1>Resource</h1>
@@ -29,7 +24,11 @@ const ResourceName = async ({ params }) => {
                             {types.map(({title, description, image_path}) => {
                               return (
                                 <div className='resource-item'>
-                                  <h1>Test</h1>
+                                  {(() => {
+                                    if (params.ResourceName == title) {
+                                      return <p>{title}</p>;
+                                    } 
+                                  })()}
                                 </div>
                               );
                             })}
