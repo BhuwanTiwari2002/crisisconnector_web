@@ -40,7 +40,7 @@ const ResourceName = async ({ params }) => {
                     })()}
                   </div>
                 );
-              })}
+              })}              
             </div>
           );
         })
