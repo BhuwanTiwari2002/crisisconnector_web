@@ -9,7 +9,6 @@
       {"name": "Schizophrenia", "link": "https://www.google.com/"},
       {"name": "Disruptive behaviour", "link": "https://www.google.com/"},
       {"name": "Crisis Text Line", "link": "741741"},
-      {"name": "Nacional de Prevención del Suicidio", "link": "8886289454"},
       {"name": "National Suicide and Crisis Lifeline", "link": "988"},
       {"name": "National Suicide Prevention Lifeline (Options for Deaf and Hard of Hearing)", "link": "988"},
       {"name": "Substance Abuse and Mental Health Services Administration National Helpline", "link": "8006624357"}
@@ -44,28 +43,10 @@
     ]
   },
   {
-    "title": "Diseases",
-    "types": [
-      {"name": "CDC National HIV and AIDS Hotline", "link": "8002324636"}
-    ]
-  },
-  {
-    "title": "Child Protection",
-    "types": [
-      {"name": "Childhelp National Child Abuse Hotline", "link": "8004224453"}
-    ]
-  },
-  {
     "title": "Disaster Support",
     "types": [
       {"name": "Disaster Distress Helpline Online Peer Support Communities", "link": "https://www.samhsa.gov/find-help/disaster-distress-helpline"},
       {"name": "Disaster Distress Helpline Videophone for American Sign Language Users", "link": "https://www.samhsa.gov/find-help/disaster-distress-helpline"}
-    ]
-  },
-  {
-    "title": "Veterans Support",
-    "types": [
-      {"name": "Veterans Crisis Line", "link": "9881"}
     ]
   }
 ]
