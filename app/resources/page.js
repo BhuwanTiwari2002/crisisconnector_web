@@ -32,7 +32,7 @@ const HotlineSearch = async () => {
                               <div className='resource-info'>
                                 <h2 className='resource-title'>{title}</h2>
                                 <p className='resource-desc'>{description}</p>
-                                <Link className='' href={'/Resources/' + title}>More</Link>
+                                <Link className='resource-link ' href={'/Resources/' + title}>More Infomation</Link>
                               </div>
                             </div>
                           );
