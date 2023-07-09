@@ -12,21 +12,24 @@ const getHotlineData = async (url) => {
 const ResourceName = async ({ params }) => {
   let data = await getHotlineData('resource');
   return (
-    <body className='container' id="ResourcesMainContainer">
+    <body id='detailsContainer'>
             <h1>Resource</h1>
             {
               data.map(({category, types}) => {
                   return (
                     <div>
+                      <h2>{category}</h2>
                       <div>
                       </div>
-                      <div className='resource-grid'>
-                            {types.map(({title, description, image_path}) => {
+                      <div>
+                            {types.map(({title, description, details}) => {
                               return (
                                 <div className='resource-item'>
                                   {(() => {
                                     if (params.ResourceName == title) {
-                                      return <p>{title}</p>;
+                                      <h1>{title}</h1>;
+                                      <p>{description}</p>;
+                                      <p>{details}</p>;
                                     } 
                                   })()}
                                 </div>
