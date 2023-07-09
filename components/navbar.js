@@ -14,8 +14,8 @@ function navbar() {
             <span></span>
             <ul id="menu">
                 <li><Link href="/">Home</Link></li>
-                <li><Link href="/hotlines">Hotlines</Link></li>
-                <li><Link href="/resources">Resources</Link></li>
+                <li><Link href="/Hotlines">Hotlines</Link></li>
+                <li><Link href="/Resources">Resources</Link></li>
             </ul>
         </div>
         <div className="logo-container">
