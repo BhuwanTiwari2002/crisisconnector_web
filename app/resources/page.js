@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/hotline.css';
-import '../../styles/resource.css'
+import '../../styles/resource.css';
+import Link from 'next/link';
 const getHotlineData = async (url) => {
   try {
       const response = await fetch('http://localhost:3000/api/' + url);
@@ -31,7 +32,7 @@ const HotlineSearch = async () => {
                               <div className='resource-info'>
                                 <h2 className='resource-title'>{title}</h2>
                                 <p className='resource-desc'>{description}</p>
-                                <a className='resource-link'>More Info</a>
+                                <Link className='' href={'/Resources/' + title}>More</Link>
                               </div>
                             </div>
                           );
