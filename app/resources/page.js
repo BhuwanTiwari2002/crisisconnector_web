@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/hotline.css';
 import '../../styles/resource.css';
 import Link from 'next/link';
+import Image from 'next/image'
 import getHotlineData from '../../helpers/endpoints'
 
 const HotlineSearch = async () => {
@@ -20,7 +21,7 @@ const HotlineSearch = async () => {
                         {types.map(({title, description, image_path}) => {
                           return (
                             <div className='resource-item'>
-                              <img src={image_path} alt={title} />
+                              {/* <Image src={image_path} alt={description}></Image> */}
                               <div className='resource-info'>
                                 <h2 className='resource-title'>{title}</h2>
                                 <p className='resource-desc'>{description}</p>

@@ -1,8 +1,13 @@
 import React from 'react'
 import getHotlineData from '../../../helpers/endpoints'
-
+import '../../../styles/resource.css';
+ 
 const ResourceName = async ({ params }) => {
   let data = await getHotlineData('resource');
+  // Working on lowering the returns 
+  data.map(({category, types}) => {
+
+  });
   return (
       <body>
       <h1>Resource</h1>
@@ -10,7 +15,6 @@ const ResourceName = async ({ params }) => {
         data.map(({category, types}) => {
           return (
             <div className='detailsContainer'>
-              <h2>{category}</h2>
               {types.map(({title, description, details, image_path}) => {
                 return (
                   <div className='resource-item'>
